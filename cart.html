@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cartstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style=" background-color:#1BE7FF;">
+        <a class="navbar-brand" href="index.html" style="font-weight:bold; font-size:30px;">Fresh Mart</a>
+        <a class="ca fa fa-shopping-cart" style="font-size:48px;color:dodger blue" href="cart.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style=" background-color:#1BE7FF;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#grocery">Grocery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clothing">Clothing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cosmetics">Cosmetics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#support">Customer Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Welcome to Fresh Mart!</h1>
+            <p class="lead">Your one-stop shop for groceries, clothing, and cosmetics.</p>
+        </div>
+    </div>
+
+
+    <!-- ********************* calculation ******************** -->
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="carttwo">
+            <a href="index.html">Back to Products</a>
+            <button id="clear-cart" class="clearBtn" onclick="clearCart()">Clear Cart</button>
+
+            <p>Total: $<span id="total-amount">0</span></p>
+        </div>
+    </div>
+    <!-- ********************* calculation END ******************** -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cartScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 1%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.navbar {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+}
+nav .ca{
+    position: fixed;
+    right: 60px;
+    top: 20px;
+    margin-right: 20px;
+    width: 50px;
+}
+    @media (max-width: 991px) {
+        nav .ca {
+        margin-right: 50px;
+            } }
+.navbar span{
+    color: dodgerblue;
+    font-size: 30px;
+}
+    @media (max-width: 991px) {
+        .navbar li {
+        margin-left: 20px;
+            } }
+
+/* *******r**********hero section************************ */
+
+.hero-section {
+    margin-top: 70px;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    animation: slide 15s infinite;
+}
+
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide {
+    0% { background-image: url('images/image1.jpg'); }
+    22% { background-image: url('images/image2.jpg'); }
+    44% { background-image: url('images/image5.jpg'); }
+    66% { background-image: url('images/image6.jpg'); }
+    88% { background-image: url('images/image9.jpg'); }
+    100% { background-image: url('images/image10.jpg'); }
+}
+/* *******r**********hero section end************************ */
+
+.container{
+    margin-top: 10%;
+    text-align: center;
+}
+.container h2{
+margin-top: 50px;
+}
+.container hr{
+max-width: 10%;
+height: auto;
+margin-top: 30px;
+border-bottom: 3px solid #1BE7FF;
+
+}
+.container .Categoriestwo, .clothingtwo, .cosmeticstwo{
+    display: flex;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.container .groceryContent, .clothingContent, .cosmeticsContent {
+    margin-top: 5%;
+    margin-left: 62px;
+    max-width: 25%; 
+    height: auto;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.container .grocery, .clothing, .cosmetics {
+    margin-top: 60px;
+}
+@media (max-width: 600px) {
+    .container .groceryContent, .clothingContent, 
+    .cosmeticsContent {
+        max-width: 30%; 
+        height: auto;
+        border-radius: 10%;
+        cursor: pointer;
+        margin: auto;
+        padding: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        } }
+
+.container img{
+    max-width: 100%; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.container img:hover{
+    transform: scale(1.1);
+}
+.container .support{
+    max-width: 50%; 
+    height: auto;
+    margin: auto;
+    padding: auto;
+}
+.container .support form{
+    text-align: left;
+    margin-top: 15%;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+/* *******r**********grocery************************ */
+
+
+/* *******r**********cart************************ */
+
+.cart {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    background-color: #fff;
+}
+.cart .carttwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1BE7FF;
+    width: 100%;
+}
+.cart .carttwo a, .clearBtn {
+    display: flex;
+    margin: 10px;
+    color: black;
+    border: none;
+    background-color: #1BE7FF;
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+}
+.cart .carttwo a:hover, .clearBtn:hover {
+    background-color: dodgerblue;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+}
+.cart .carttwo p {
+    margin-left: 20%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    word-spacing: 100px;
+    line-height: 2.8;
+    font-size: 20px;
+    border-top: 2px solid;
+}
+
+@media (max-width: 400px) {
+    .cart ul{
+        word-spacing: 55px;
+        } }

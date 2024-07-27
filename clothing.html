@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cartstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style=" background-color:#1BE7FF;">
+        <a class="navbar-brand" href="index.html" style="font-weight:bold; font-size:30px;">Fresh Mart</a>
+        <a class="ca fa fa-shopping-cart" style="font-size:48px;color:dodger blue" href="cart.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-navicon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style=" background-color:#1BE7FF;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#grocery">Grocery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clothing">Clothing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cosmetics">Cosmetics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#support">Customer Support</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Welcome to Fresh Mart!</h1>
+            <p class="lead">Your one-stop shop for groceries, clothing, and cosmetics.</p>
+        </div>
+    </div>
+
+    <!-- product Section -->
+    <div class="productc">
+        <img src="images/image18.jpg" class="card" alt="image">
+        <div class="productContentc">
+            <h3 class="disply"><b>T-Shirt</b></h1>
+            <p class="">Free Shipping ✓ Cash on Delivery ✓ Best Offers.</p>
+            <p class="">$34.00</p>
+            <button class="btnc fa fa-shopping-cart" onclick="addToCart('Product 5', 50)"> Add to Cart</button>
+        </div>
+    </div>
+    <div class="productc">
+        <img src="images/image19.jpg" class="card" alt="image">
+        <div class="productContentc">
+            <h3 class="disply"><b>T-Shirt</b></h1>
+            <p class="">Buy T-Shirts at our Clothing Store. Check Price and Buy Online.</p>
+            <p class="">$25.00</p>
+            <button class="btnc fa fa-shopping-cart" onclick="addToCart('Product 5', 50)"> Add to Cart</button>
+        </div>
+    </div>    
+    <div class="productc">
+        <img src="images/image20.jpg" class="card" alt="image">
+        <div class="productContentc">
+            <h3 class="disply"><b>Pent</b></h1>
+            <p class="">A pent is one of the most important garments of an outfit!</p>
+            <p class="">$30.00</p>
+            <button class="btnc fa fa-shopping-cart" onclick="addToCart('Product 5', 50)"> Add to Cart</button>
+        </div>
+    </div>    
+    <div class="productc">
+        <img src="images/image21.jpg" class="card" alt="image">
+        <div class="productContentc">
+            <h3 class="disply"><b>Coat</b></h1>
+            <p class="">Men Casual Coat Online. Shop for Men Casual Coat in Pakistan.</p>
+            <p class="">$40.00</p>
+            <button class="btnc fa fa-shopping-cart" onclick="addToCart('Product 5', 50)"> Add to Cart</button>
+        </div>
+    </div>
+    <div class="productc">
+        <img src="images/image22.jpg" class="card" alt="image">
+        <div class="productContentc">
+            <h3 class="disply"><b>Jacket</b></h1>
+            <p class="">Buy Jackets for men in best quality in all Colors & Styles from Pakistani Brand.</p>
+            <p class="">$40.00</p>
+            <button class="btnc fa fa-shopping-cart" onclick="addToCart('Product 5', 50)"> Add to Cart</button>
+        </div>
+    </div>
+    <!-- product Section END -->
+
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Fresh Mart. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="cartScript.js"></script>
+</body>
+</html>
